@@ -142,9 +142,14 @@ Installation steps:
     adherence to best practices, and additional configuration options.
 
 *   In order to decide whether to show an error message for tests,
-    now the "Compilation error" string is matche to the standard output of
+    now the "Compilation error" string is matched to the standard output of
     the test compile command. This may be improved by matching inside Elixir
     and returning exit code 1.
+
+*   Further investigation of the Elixir per-file build process could lead
+    to more robust solutions.
+
+*   Improve styling and UX visuals.
 
 ## Contributing
 
