@@ -1,0 +1,6 @@
+*vim-elixir-compiler.txt*
+
+vim-elixir-compiler - A Vim plugin for compiling and debugging Elixir files
+
+Commands:
+  :ElixirToggleShowErrors - Manually enable or disable showing compile errors.
