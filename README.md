@@ -32,6 +32,7 @@ Installation steps:
     ```
 </details>
 
+<details>
 <summary>Vundle</summary>
 
 Information about Vundle: [Vundle repository].
