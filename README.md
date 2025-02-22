@@ -3,11 +3,100 @@
 A Vim plugin for automatically compiling Elixir Mix project files on save.
 This project is inspired by [`vim-erlang-compiler`][vim-erlang-compiler].
 
-Development is still in progress, and further improvements are needed.
-
 ## Installation
 
-TBD.
+<details>
+<summary>Vim's built-in package manager</summary>
+
+This is the recommended installation method if you use at least Vim 8 and you
+don't use another package manager.
+
+Information about Vim's built-in package manager: [`:help packages`].
+
+Installation steps:
+
+1.  Clone this repository (you can replace `foo` with the directory name of your
+    choice):
+
+    ```sh
+    $ git clone https://github.com/mijito-wx/vim-elixir-compiler.git \
+          ~/.vim/pack/foo/start/vim-elixir-compiler
+    ```
+
+2.  Restart Vim.
+
+3.  Generate help page (replace `foo` with the same directory name as above):
+
+    ```
+    :helptags ~/.vim/pack/foo/start/vim-elixir-compiler/doc
+    ```
+</details>
+
+<summary>Vundle</summary>
+
+Information about Vundle: [Vundle repository].
+
+Installation steps:
+
+1.  Add `vim-elixir-compiler` to your plugin list in `.vimrc` by inserting
+    the line that starts with `Plugin`:
+
+    ```
+    call vundle#begin()
+      [...]
+      Plugin 'mijito-wx/vim-elixir-compiler'
+      [...]
+    call vundle#end()
+    ```
+
+2.  Restart Vim.
+
+3.  Run `:PluginInstall`.
+</details>
+
+<summary>Pathogen</summary>
+
+Information about Pathogen: [Pathogen repository].
+
+Installation steps:
+
+1.  Clone this repository:
+
+    ```
+    $ git clone https://github.com/mijito-wx/vim-elixir-compiler.git \
+          ~/.vim/bundle/vim-elixir-compiler
+    ```
+
+2.  Restart Vim.
+
+3.  Generate help page:
+
+    ```
+    :Helptags
+    ```
+</details>
+
+<summary>Vim-Plug</summary>
+
+Information about Vim-Plug: [vim-plug repository].
+
+Installation steps:
+
+1.  Add `vim-elixir-compiler` to your plugin list in `.vimrc` by inserting the
+    line that starts with `Plug`:
+
+    ```
+    call plug#begin()
+      [...]
+      Plug 'mijito-wx/vim-elixir-compiler'
+      [...]
+    call plug#end()
+    ```
+
+2.  Restart Vim.
+
+3.  Run `:PlugInstall`.
+</details>
 
 ## Usage
 
@@ -28,6 +117,8 @@ TBD.
     automatically once the code compiles successfully.
 
 ## Known Issues, planned improvements
+
+*   Development is still in progress, and further improvements are needed.
 
 *   Compilation commands are hardcoded.
     The plugin compiles code using `mix compile`.
@@ -56,4 +147,8 @@ TBD.
 
 Feedback and ideas are welcome!
 
+[`:help packages`]: https://vimhelp.org/repeat.txt.html#packages
+[Pathogen repository]: https://github.com/tpope/vim-pathogen
 [vim-erlang-compiler]: https://github.com/vim-erlang/vim-erlang-compiler
+[vim-plug repository]: https://github.com/junegunn/vim-plug
+[Vundle repository]: https://github.com/VundleVim/Vundle.vim
