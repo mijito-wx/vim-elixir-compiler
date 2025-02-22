@@ -55,6 +55,7 @@ Installation steps:
 3.  Run `:PluginInstall`.
 </details>
 
+<details>
 <summary>Pathogen</summary>
 
 Information about Pathogen: [Pathogen repository].
@@ -77,6 +78,7 @@ Installation steps:
     ```
 </details>
 
+<details>
 <summary>Vim-Plug</summary>
 
 Information about Vim-Plug: [vim-plug repository].
