@@ -1,7 +1,7 @@
 # vim-elixir-compiler
 
-A Vim plugin for automatically compiling Elixir Mix project files on save.
-This project is inspired by [`vim-erlang-compiler`][vim-erlang-compiler].
+A Vim plugin for automatically compiling Elixir Mix project files on save, with
+live debug. This project is inspired by [`vim-erlang-compiler`][vim-erlang-compiler].
 
 ## Installation
 
@@ -119,9 +119,10 @@ Installation steps:
 4.  Fix the errors and save the file again — the buffer will close
     automatically once the code compiles successfully.
 
-## Known Issues, planned improvements
+## Known Issues, further development
 
-*   Development is still in progress, and further improvements are needed.
+*   The debug window displays compilation errors for all project files, not
+    just the one being edited.
 
 *   Compilation commands are hardcoded.
     The plugin compiles code using `mix compile`.
@@ -135,11 +136,8 @@ Installation steps:
 *   Test files will only produce their own debug output if the project source
     compiles successfully, as `Kernel.ParallelCompiler` requires a valid build.
 
-*   The debug window displays compilation errors for all project files, not
-    just the one being edited.
-
-*   The plugin still requires improvements, including better documentation,
-    adherence to best practices, and additional configuration options.
+*   The plugin still requires better documentation, adherence to best
+    practices, and additional configuration options.
 
 *   In order to decide whether to show an error message for tests,
     now the "Compilation error" string is matched to the standard output of
