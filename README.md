@@ -1,5 +1,7 @@
 # vim-elixir-compiler
 
+![](.readme-resources/vim-elixir-compiler.gif)
+
 A Vim plugin for automatically compiling Elixir Mix project files on save, with
 live debug. This project is inspired by [`vim-erlang-compiler`][vim-erlang-compiler].
 
